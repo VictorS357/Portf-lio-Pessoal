@@ -24,7 +24,6 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     min-height: 100vh;
-    margin-top: 100px;
 }
 
 header {
@@ -43,7 +42,7 @@ header {
 
 .navbar{
     display: flex;
-    width: 40%;
+    width: 27%;
 }
 
 .navbar ul {
@@ -57,7 +56,7 @@ header {
     position: relative;
     color: var(--text-color);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .navbar a::after {
@@ -82,12 +81,12 @@ header {
 .name-logo {
     display: inline-block;
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
-.name-logo span {
+span {
     color: var(--main-color);
 }
 
@@ -99,4 +98,117 @@ header {
     font-size: 56px;
     color: var(--main-color);
     display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 12rem 12%;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    gap: 170px;
+    justify-content: center;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.text-content h1 {
+    font-size: 65px;
+}
+
+.text-content h3 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.text-content p {
+    line-height: 1.8;
+}
+
+.right-section img {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.right-section img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
+.social-icons {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons i {
+    display: flex;
+    border: 1px solid var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2) translateY(-5px);
+    color: var(--text-color);
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.cta-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.hire, 
+.contact {
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hire {
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.contact {
+    color: var(--main-color);
+    background-color: black;
+    border: 2px solid var(--main-color);
+}
+
+.contact:hover {
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+    transform: scale(1.05) translateY(-2px);
+}
+
+.hire:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    transform: scale(1.05) translateY(-2px);
 }
