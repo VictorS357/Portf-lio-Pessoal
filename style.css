@@ -26,6 +26,8 @@ body {
     min-height: 100vh;
 }
 
+/* header section */
+
 header {
     position: fixed;
     display: flex;
@@ -99,6 +101,8 @@ span {
     color: var(--main-color);
     display: none;
 }
+
+/* home section */
 
 section {
     min-height: 100vh;
@@ -211,4 +215,29 @@ section {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color);
     transform: scale(1.05) translateY(-2px);
+}
+/* about me section */
+
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.about-text-content h1 {
+    font-size: 60px;
+}
+
+.about-text-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 14px;
 }
