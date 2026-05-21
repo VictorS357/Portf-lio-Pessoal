@@ -112,7 +112,7 @@ section {
 .home-section {
     display: flex;
     align-items: center;
-    gap: 170px;
+    gap: 100px;
     justify-content: center;
 }
 
@@ -124,11 +124,11 @@ section {
 }
 
 .text-content h1 {
-    font-size: 65px;
+    font-size: 60px;
 }
 
 .text-content h3 {
-    font-size: 35px;
+    font-size: 32px;
     margin-bottom: 8px;
 }
 
@@ -240,4 +240,10 @@ section {
     line-height: 1.8;
     margin-bottom: 20px;
     font-size: 14px;
+}
+
+/* services section */
+
+.services-section {
+    
 }
